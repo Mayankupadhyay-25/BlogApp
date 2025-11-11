@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 //rourte schema
-const postachema = new mongoose.Schema({
+const postSchema = new mongoose.Schema({
     title:{
         type: String,
         required:true,
@@ -23,4 +23,4 @@ const postachema = new mongoose.Schema({
 });
 
 //export the model
-model.exports = mongoose.model("Post",postachema)
+module.exports = mongoose.model("Post",postSchema)
