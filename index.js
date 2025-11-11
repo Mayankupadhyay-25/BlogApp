@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+
 require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
@@ -19,5 +20,5 @@ app.listen(PORT, () => {
 })
 
 app.get("/",(req, res) =>{ 
-    res.send(`<h1>Welcome to blog site homepage<h1>`)
+    res.send(`<h1>Welcome to blog site Homepage<h1>`)
 })
