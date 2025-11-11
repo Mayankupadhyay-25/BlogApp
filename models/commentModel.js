@@ -20,4 +20,4 @@ body:{
 
 //exporting the model
 
-model.exports = mongoose.model("Comment", commentSchema);
+module.exports = mongoose.model("Comment", commentSchema);
